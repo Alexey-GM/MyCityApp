@@ -1,4 +1,4 @@
-package com.example.mycityapp
+package com.example.mycityapp.ui
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -9,4 +9,3 @@ fun MyCityApp(
 ) {
 
 }
-
