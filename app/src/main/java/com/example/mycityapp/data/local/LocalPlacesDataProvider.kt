@@ -115,4 +115,6 @@ object LocalPlacesDataProvider {
             description = R.string.park_komsomolsky_description
         )
     )
+
+    val defaultPlace = places.last()
 }
