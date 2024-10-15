@@ -36,11 +36,15 @@ class MyCityViewModel: ViewModel() {
         }
     }
 
-    fun updateDetailsScreenStates(place: Place) {
+    fun updateCurrentPlace(place: Place) {
         _uiState.update {
             it.copy(
                 currentSelectedPlace = place
             )
         }
+    }
+
+    fun getPlacesCategories(): List<PlaceCategory> {
+        return LocalPlacesDataProvider.places.map { it.category }.distinct()
     }
 }

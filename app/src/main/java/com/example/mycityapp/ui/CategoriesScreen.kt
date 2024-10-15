@@ -25,7 +25,7 @@ import com.example.mycityapp.data.PlaceCategory
 import com.example.mycityapp.data.local.LocalPlacesDataProvider
 
 @Composable
-fun MyCityCategoryScreen(
+fun CategoriesScreen(
     modifier: Modifier = Modifier,
     categories: List<PlaceCategory>,
     onCategoryClick: (PlaceCategory) -> Unit,
@@ -102,7 +102,7 @@ fun CategoryItem(
 @Composable
 fun MyCityCategoryPreview() {
     MyCityAppTheme {
-        MyCityCategoryScreen(
+        CategoriesScreen(
             categories = LocalPlacesDataProvider.places.map { it.category }.distinct(),
             onCategoryClick = {},
             selectedCategory = PlaceCategory.Parks,
