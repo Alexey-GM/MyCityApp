@@ -5,6 +5,6 @@ import com.example.mycityapp.data.PlaceCategory
 
 data class MyCityUiState (
     val places: Map<PlaceCategory, List<Place>> = emptyMap(),
-    val currentCategory: PlaceCategory = PlaceCategory.Park,
+    val currentCategory: PlaceCategory = PlaceCategory.Parks,
     val currentSelectedPlace: Place? = null
 )

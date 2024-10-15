@@ -62,7 +62,6 @@ dependencies {
     implementation(libs.androidx.ui.text.google.fonts)
     implementation(libs.androidx.material.icons.extended)
     implementation("androidx.compose.material3:material3-window-size-class")
-    implementation(libs.androidx.lifecycle.viewmodel.c.ompose)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
