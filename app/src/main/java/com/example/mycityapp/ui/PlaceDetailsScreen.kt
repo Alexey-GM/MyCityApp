@@ -99,7 +99,7 @@ fun PlaceDetailsScreen(
 fun PlaceDetailsScreenPreview() {
     MyCityAppTheme {
         PlaceDetailsScreen(
-            selectedPlace = LocalPlacesDataProvider.defaultPlace,
+            selectedPlace = LocalPlacesDataProvider.places.filter { it.title == R.string.mall_promenad3_title }[0],
             contentPadding = PaddingValues(0.dp),
             modifier = Modifier.fillMaxSize()
         )
